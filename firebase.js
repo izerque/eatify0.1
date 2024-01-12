@@ -1,6 +1,6 @@
 import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-import { initializeApp, getAnalytics } from "firebase/app";
+import 'firebase/compat/database';
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyBB48iGK6K1f8lLVrV9SK_gHel2PHHyLZo",
@@ -12,7 +12,10 @@ const firebaseConfig = {
     measurementId: "G-W0E13VSR35"
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+const usersRef = database.ref('users');
 
 export default firebase;
+

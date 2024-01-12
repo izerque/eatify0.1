@@ -25,7 +25,7 @@ const LoginForm = () => {
       }}
     >
       {formikProps => (
-        <Form className="bg-white flex flex-col gap-4 justify-center items-center border border-orange-200 rounded h-[620px]  w-7/12 px-8 pt-6 pb-8 mb-4">
+        <Form className="bg-white flex flex-col gap-4 justify-center items-center border border-orange-200 rounded h-[620px]  w-7/12 px-8 pt-6 pb-8 mb-4 shadow-xl">
           <div className="w-full">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
